@@ -1,0 +1,12 @@
+.tech{
+    border-radius: 25px;
+    color: #ffffff;
+    line-height: 30px;
+    width: fit-content;
+    height: 30px;
+    padding: 0 20px;
+}
+pre{
+    white-space: pre-wrap; /* Activer le retour à la ligne automatique */
+    font-family: 'Roboto', sans-serif;
+}

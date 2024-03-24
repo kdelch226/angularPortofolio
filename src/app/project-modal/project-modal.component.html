@@ -1,0 +1,27 @@
+<div class="modal-header">
+    <h2>{{projetM.name}}</h2>
+    <button class="btn-close" (click)="bsModalRef.hide()"></button>
+</div>
+
+ <!--le composant contenant les details d'un projet est composer de ces images dune desciption complete et de ces outils utilisees-->
+<div class="modal-body">
+    <carousel>
+        <div *ngIf="projetM.pictures.length === 0">
+            <!-- Si le projet na pas dimage on affiche une image par defaut -->
+            <slide><img src="../../assets/indisponible.png" alt="" style="display: block; width: 100%; min-height: 200px;max-height: 350px;"></slide>
+        </div>
+         <!-- si non on affiche les imnages du projets-->
+        <div *ngFor="let image of projetM.pictures">
+            <slide> <img src={{image}} alt=""  style="display: block; width: 100%; min-height: 260px;"></slide>
+        </div>
+    </carousel>
+
+    <h3 class="mt-2">Description</h3>
+    <pre>{{projetM.description}}</pre>
+    <hr>
+    <div class="d-flex  justify-content-center" >
+        <div *ngFor="let techno of projetM.tech">       
+             <div class="tech me-2 mb-1" [style.background-color]="techno.color" >{{techno}}</div>
+        </div>
+    </div>
+</div>

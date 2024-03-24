@@ -1,0 +1,55 @@
+accordion-group::ng-deep .btn-link{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;    
+}
+
+accordion-group::ng-deep .card-header{
+    background-color: rgb(237, 237, 237);
+    max-height: 80px;
+    height: 10vw;
+    min-height: 50px;
+}
+
+.container-fluid{
+    display: flex;
+    width: 80vw;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container-fluid img{
+    width: 40%;
+    height: 40%;
+    max-width: 250px;
+    max-height: 200px;
+}
+
+li {
+    list-style: none;
+}
+
+.qualities {
+    display: flex;
+    flex-wrap: wrap; /* Force le retour à la ligne des éléments */
+  }
+  
+  .quality {
+    margin-right: 10px; /* Espacement horizontal entre chaque élément */
+    margin-bottom: 10px; /* Espacement vertical entre chaque élément */
+    border: 1px solid black;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    padding: 5px;
+  }
+  
+.col-sm-6{
+    margin-right: 10px; /* Espacement horizontal entre chaque élément */
+    margin-bottom: 10px; /* Espacement vertical entre chaque élément */
+    border: 1px solid black;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    padding: 5px;
+    max-width: 30%;
+    min-width: 250px;
+}
+

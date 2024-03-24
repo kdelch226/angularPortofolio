@@ -1,0 +1,12 @@
+.tech{
+    border-radius: 25px;
+    color: #ffffff;
+    line-height: 30px;
+    width: fit-content;
+    height: 30px;
+    padding: 0 15px;
+}
+.card-title{
+font-weight: bold;
+}
+

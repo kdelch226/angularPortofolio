@@ -1,0 +1,21 @@
+<div class="card text-center shadow " style="background-color: rgb(237, 237, 237); ">
+    
+     <!--une carte de projet est composer de son titre, text descriptif et de la liste des outils utilises-->
+    <div class="card-body">
+        <h5 class="card-title">{{project.name}}</h5>
+        <p class="card-text">{{project.summary}}</p>
+
+         <!-- en cliquand sur le bouton de details on affiche un autre composant detaillant tout le projett-->
+        <button class="btn btn-danger" (click)="OpenProjectModal()">Voir plus</button>
+    </div>
+
+     <!-- on prends la liste doutils quil utilise et on les aficches horizontalement --> 
+    <div class="card-footer bg-transparant border-dark text-center">
+        <div class="d-flex justify-content-center">
+            <div *ngFor="let techno of project.tech">
+                <div class="tech me-2 mb-1" [style.background-color]="techno.color"> {{techno}}</div>
+            </div>
+        </div>
+    </div>
+
+</div>

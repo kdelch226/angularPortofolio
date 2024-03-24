@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-md navbar-light bg-light text-center p-3">
+    <div class="container">
+        
+        <!-- Marque de navigation -->
+        <a class="navbar-brand" href="#"><strong>BrunelCV</strong></a>
+        
+        <!-- Bouton de bascule pour les petits écrans -->
+        <button class="navbar-toggler" type="button" (click)="isCollapse=!isCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Contenu de la barre de navigation -->
+        <div [collapse]="isCollapse" class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+                <!-- Liens de navigation -->
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/Acceuil" routerLinkActive="text-danger">Acceuil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/Realisations" routerLinkActive="text-danger">Realisations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/Parcours" routerLinkActive="text-danger">Parcours</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/Contact" routerLinkActive="text-danger">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

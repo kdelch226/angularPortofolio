@@ -1,0 +1,60 @@
+<div class="container-fluid text-center">
+    <!-- Contenu principal -->
+    <div class="contenu" style="margin-top: 7em;">
+        <!-- Bannière de texte -->
+        <div class="banniere_text">
+            <div class="text-center">
+                <!-- Titre principal -->
+                <h1>Kompoare Brunel Delchamp</h1>
+                <!-- Sous-titre -->
+                <h3>Nouveau diplômé en Informatique</h3>
+            </div>
+            <!-- Boutons -->
+            <div class="mb-3 mt-3">
+                <!-- Bouton de téléchargement du CV -->
+                <button class="btn btn-danger m-2" style="border-radius: 15px; font-weight: bold;" (click)="DownloadFile()">Mon CV <img src="../../assets/telecharger.png" alt="" style="width: 18px;height: 15px;"></button>
+                <!-- Bouton de contact -->
+                <button class="btn btn-info m-2" style="border-radius: 15px;" routerLink="/Contact">Contact</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5 mb-5">
+    <div class="row">
+        <!-- Colonne 1 -->
+        <div class="col shadow border m-1 mx-3 mt-3" style="max-width: 690px;background-color: rgb(241, 241, 241); min-width: 200px;">
+            <!-- Contenu de la première colonne -->
+            <div class="text-center">
+                <!-- Titre de la section -->
+                <h1>Qui suis<span class="text-danger">je ?</span></h1>
+                <!-- Image de profil -->
+                <img src="/assets/monprofil.png" alt="Photo de profil" width="216px" height="256px" class="rounded-photo">
+                <!-- Description -->
+                <p>Je suis un nouveau diplômé recherchant de nouvelles opportunités professionnelles.<br>Mes compétences en résolution de problèmes, programmation, gestion de projets et ma capacité à travailler en équipe font de moi un candidat polyvalent et motivé.</p>
+                <!-- Bouton d'action -->
+                <div class="portofolio-action mb-3 mt-3">
+                    <button class="btn btn-outline-danger m-2" style="border-radius: 15px;" routerLink="/Parcours">Mon parcours</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Colonne 2 -->
+        <div class="col shadow border m-1 mx-3 mt-3" style="max-width: 690px;background-color: rgb(241, 241, 241); min-width: 200px;">
+            <!-- Contenu de la deuxième colonne -->
+            <div class="text-center">
+                <!-- Titre de la section -->
+                <h4 class="mt-3">Projet récent</h4>
+                <!-- Nom du projet -->
+                <h4 style="font-weight: bold;">{{featuredProjet.name}}</h4>
+                <!-- Image du projet -->
+                <img src="{{featuredProjet.pictures[0]}}" style="display: block; width: 100%; max-height: 356px;">
+                <!-- Résumé du projet -->
+                <p class="mt-2">{{featuredProjet.summary}}</p>
+                <!-- Bouton pour voir plus de réalisations -->
+                <h4>Consultez mes réalisations pour plus de détails</h4>
+                <button class="btn btn-danger mb-4" routerLink="/Realisations">Réalisations</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,24 @@
+/* Définition d'une taille de police de base pour tous les éléments */
+* {
+    font-size: 1em;
+}
+
+/* Styles pour la barre de navigation */
+.navbar {
+    /* Position fixe pour que la barre de navigation reste en haut de la page lors du défilement */
+    position: fixed;
+    /* Largeur de la barre de navigation sur toute la largeur de la fenêtre */
+    width: 100%;
+    /* Flexbox pour aligner les éléments horizontalement */
+    display: flex;
+    /* Répartition égale des éléments sur la ligne */
+    justify-content: space-between;
+    /* Alignement vertical au centre */
+    align-items: center;
+    /* Durée de transition pour les animations */
+    transition: 0.5s;
+    /* Positionnement en haut de la page */
+    top: 0;
+    /* Empilement au-dessus des autres éléments */
+    z-index: 999;
+}
